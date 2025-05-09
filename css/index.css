@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bgcolor{
+    background-color: #1F3B89;
+    height: 880px;
+}
+ .topnav {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    height: 70px; 
+    
+}
+
+.logo img {
+    height: 65px;
+    margin-left: 111px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    margin-right: 101px;
+    background-color: #0059CC;
+    height: 46px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px; 
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.navlinks a:hover {
+    background-color: #003f99;
+}
+
+
+.qoute {
+    background-color: #1F3B89;
+    width: auto;
+}
+
+
+.bgpic{
+    background-image: url("../images/world.png");
+    background-size: cover;             /* Jaza div yote vizuri */
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.bgpic b{
+    font-size: 60px;
+
+}
+
+.content{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.contentpic{
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.bg-overlay {
+    background-color: rgba(128, 128, 128, 0.6); /* grey na opacity */
+    height: 678px;
+}
+
+.allign{
+    width: 1000px ;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.cct{
+    color: blue;
+}
+.flex1{
+    display: flex;
+    gap:50px;
+}
+
+.block1{
+    display: block;
+    line-height: 28px;
+}
+
+.smllflex{
+    display: flex;
+    gap: 13px;
+}
+
+.box{
+    background-color: #E5F1FF;
+    color: #0059CC;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.flex2{
+    display: flex;
+    gap:50px;
+    line-height: 28px;
+}
+.flex2 span{
+    margin-top: 70px;
+
+}
+
+.flex3pic{
+    background-image: url('../images/rectaangleHands.png');
+    background-size: cover;             /* Jaza div yote vizuri */
+    background-repeat: no-repeat;
+    height:419px;
+    margin-top:130px
+}
+.flex3{
+    padding-top:130px;
+    padding-left:200px;
+    background-color: rgba(0, 89, 204, 0.7);
+    display: flex;
+    gap: 100px;
+    height:290px;
+    line-height: 25px;
+
+}
+.flex3 span{
+    color:white;
+}
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 10px;
+    }
+    details {
+      margin-top: 10px;
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    summary {
+      font-weight: bold;
+      font-size: 16px;
+    } 
+
+
+.center{
+    margin-top:100px;
+    text-align: center;
+    line-height:25px;
+
+}
+.center_firstp{
+    color: #1F3B89;
+    font-family: body title;
+}
+.center_secondp{
+    color:#191B1F;
+    font-family: body paragraph;
+    
+}
+.center_lastp{
+    color:#191B1F;
+    font-family: body title;
+}
+
+.flex4{
+    display:flex;
+    gap:30px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+
+.flex4color{
+    color:#0059CC;
+    font-family: body title;
+    margin-left: 100px;
+}
+
+.flex5{
+    margin-left: 250px;
+       margin-top: 50px;
+       display:flex;
+      gap:180px;
+}
+
+.height{
+       line-height:50px;
+}
+
+.block{
+    display:block;
+    line-height:25px;
+}
+.topdown{
+    margin-top: 180px;
+}
+
+.pg{
+       line-height:30px;
+       margin-top: 20px;
+}
+
+.flex5 b{
+    margin-left: 80px;
+    color: #0059CC;
+    margin-top: 20px;
+
+}
+
+.footer{
+    display: flex;
+    gap:100px;
+    justify-content: space-around;
+    background-color: #003f99;
+    color:white;
+}
+.footer a{
+    color: white;
+    line-height: 35px;
+
+}
+
+
+.footerblock1, .footerblock2 {
+    display: block;
+
+}
+
+.footerblock2 span{
+    margin-top: 70px;
+}
+
