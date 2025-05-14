@@ -199,7 +199,7 @@
 }
 
 .flex5{
-    margin-left: 250px;
+       margin-left: 250px;
        margin-top: 50px;
        display:flex;
       gap:180px;
@@ -213,8 +213,9 @@
     display:block;
     line-height:25px;
 }
+
 .topdown{
-    margin-top: 180px;
+    margin-top: 200px;
 }
 
 .pg{
@@ -227,6 +228,47 @@
     color: #0059CC;
     margin-top: 20px;
 
+}
+.flex6{
+    display: flex;
+}
+.block6 b{
+    color: black;
+}
+.flex8{
+    margin-left: 250px;
+       margin-top: 50px;
+       display:flex;
+      gap:180px;
+}
+.quote-form {
+  background-color: rgba(173, 216, 230, 0.4); /* light blue with opacity */
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.quote-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-form input,
+.quote-form select {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  appearance: none;
+  outline: none;
+}
+
+.quote-form select {
+  cursor: pointer;
 }
 
 .footer{
