@@ -1,7 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .bgcolor{
     background-color: #1F3B89;
     height: 880px;
@@ -20,6 +27,37 @@
     height: 65px;
     margin-left: 111px;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0059CC;
+    padding: 10px;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .navlinks a {
+    padding: 12px;
+  }
+}
+
 
 .navlinks {
     display: flex;
@@ -610,6 +648,43 @@
 
 
 @media (max-width: 768px) {
+      .flex1, .flex2, .flex3, .flex4, .flex5, .flex6, .flex7, .flex8 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .allign, .contact-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact-container iframe {
+    width: 100% !important;
+    height: 200px;
+  }
+
+  .quote-form {
+    width: 100%;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  .bgpic b {
+    font-size: 28px;
+  }
+
+  .contentpic {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 40px;
+  }
     .articles-container {
         padding: 0 10px;
     }

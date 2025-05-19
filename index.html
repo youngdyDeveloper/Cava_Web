@@ -15,6 +15,8 @@
             <div class="logo">
                  <img src="images/logo.png" alt="none">
             </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
 
             <div class="navlinks">
                 <a href="index.html">About Us </a>
@@ -451,6 +453,12 @@
         <i class="fas fa-arrow-up"></i>
     </a>
        
+<script>
+function toggleMenu() {
+  const nav = document.querySelector('.navlinks');
+  nav.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
