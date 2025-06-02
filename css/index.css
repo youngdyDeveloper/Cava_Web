@@ -39,7 +39,6 @@ body {
   .menu-toggle {
     display: block;
   }
-  
 
   .navlinks {
     display: none;
@@ -56,7 +55,8 @@ body {
   .navlinks a {
     padding: 12px;
   }
-}
+ }
+
 
 
 .navlinks {
@@ -643,134 +643,74 @@ body {
 .scroll-top-button:hover {
     opacity: 1;
 }
+/* ==== RESPONSIVE FIXES ADDED HERE ====*/
 
-/* Media queries for responsiveness */
-
-
-@media (max-width: 768px) {
-      .flex1, .flex2, .flex3, .flex4, .flex5, .flex6, .flex7, .flex8 {
+/* Ensure sections adjust properly on small screens */
+@media (max-width: 1024px) {
+  .allign, .flex3, .flex4, .flex5, .flex8, .contact-container {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .allign, .contact-container {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .contact-container iframe {
-    width: 100% !important;
-    height: 200px;
-  }
-
-  .quote-form {
-    width: 100%;
-  }
-
-  .content {
-    padding-left: 20px;
-    padding-top: 100px;
-  }
-
-  .bgpic b {
-    font-size: 28px;
-  }
-
-  .contentpic {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-    padding-top: 40px;
-  }
-    .articles-container {
-        padding: 0 10px;
-    }
-    .article-card {
-        width: calc(50% - 10px);
-    }
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .footer-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-    .company-info, .contact-info, .social-links {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .article-card {
-        width: 100%;
-    }
-    .topnav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    height: auto;
-  }
-
-  .logo img {
-    margin-left: 0;
-    height: 50px;
-  }
-
-  .navlinks {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-right: 0;
-    margin-top: 10px;
-  }
-
-  .navlinks a {
-    padding: 8px 10px;
-  }
-  .allign,
-  .flex4,
-  .flex5,
-  .flex6,
-  .contact-container,
-  .flex8 {
     margin-left: 20px;
     margin-right: 20px;
-    flex-direction: column;
+    align-items: center;
+  }
+  .flex3, .flex4, .flex5, .flex8, .contact-container {
+    padding: 0;
     gap: 20px;
   }
-
-  .flex5 {
-    gap: 30px;
+  .block, .block1, .block6, .block7, .block8, .quote-form, .contact-left, .contact-right {
+    width: 100% !important;
+    max-width: 100% !important;
   }
-
-  .contact-container {
+  .flex1, .flex2, .flex3, .flex4, .flex5, .flex6, .flex7, .flex8, .smllflex {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
   }
-
-  .contact-left,
-  .contact-right {
+  .smllflex img {
     width: 100%;
+    height: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
+
+/* Team grid already uses responsive grid, but enforce column below 500px */
+@media (max-width: 500px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hide navlinks and show toggle */
+@media (max-width: 768px) {
+  .topnav {
+    flex-wrap: wrap;
+  }
+  .navlinks {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navlinks a {
+    width: 100%;
+    padding: 12px 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .logo {
+    margin-left: 20px !important;
+  }
+}
+
+/* Fix map size for small screens */
 @media (max-width: 600px) {
-  .team-card {
-    width: 90%;
-  }
-   .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-  }
-
-  .map-image {
-    height: 150px;
+  iframe {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
